@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <! This will help in zooming in mobile>
+    <title>Upcoming Matches</title>
+
+    <script src="jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+
+    <style>
+        .navbar-default
+        {
+            background-color: purple;
+            border-color: rebeccapurple;
+        }
+        .navbar-default .navbar-brand {
+            color: #ecf0f1;
+            font-size: 1.3em;
+        }
+        .navbar-default .navbar-brand:hover,
+        .navbar-default .navbar-brand:focus {
+            font-size: 1.3em;
+            color: #ffbbbc;
+        }
+        .navbar-default .navbar-text {
+            color: #ecf0f1;
+            font-size: 1.3em;
+        }
+        .navbar-default .navbar-nav > li > a {
+            color: #ecf0f1;
+            font-size: 1.3em;
+        }
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > li > a:focus {
+            color: #ffbbbc;
+            font-size: 1.3em;
+        }
+        .navbar-default .navbar-nav > .active > a,
+        .navbar-default .navbar-nav > .active > a:hover,
+        .navbar-default .navbar-nav > .active > a:focus {
+            color: #ffbbbc;
+            font-size: 1.3em;
+            background-color: #c02b94;
+        }
+        .navbar-default .navbar-nav > .open > a,
+        .navbar-default .navbar-nav > .open > a:hover,
+        .navbar-default .navbar-nav > .open > a:focus {
+            color: #ffbbbc;
+            font-size: 1.3em;
+            background-color: #c02b94;
+        }
+        .navbar-default .navbar-toggle {
+            border-color: #c02b94;
+        }
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus {
+            background-color: #c02b94;
+        }
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #ecf0f1;
+        }
+        .navbar-default .navbar-collapse,
+        .navbar-default .navbar-form {
+            border-color: #ecf0f1;
+        }
+        .navbar-default .navbar-link {
+            font-size: 1.3em;
+            color: #ecf0f1;
+        }
+        .navbar-default .navbar-link:hover {
+            color: #ffbbbc;
+            font-size: 1.3em;
+        }
+        @media (max-width: 767px) {
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+                color: #ecf0f1;
+            }
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+                color: #ffbbbc;
+            }
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+                color: #ffbbbc;
+                background-color: #c02b94;
+            }
+        }
+        #heading
+        {
+            font-size: 90px;
+            font-family:"DejaVu Serif";
+            color:red;
+            font-style: oblique;
+        }
+        @media screen and (max-width: 900px) {
+            #heading
+            {
+                font-size:60px;
+                color:red;
+            }
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Cricket</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="aboutUs.html">About Us </a>
+                </li>
+                <li><a href="project.html">Project</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="new_user.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <br><br>
+    <div class="row">
+
+        <div class="col-sm-12">
+
+            <h1 align="center" id="heading">Upcoming Events</h1>
+
+        </div>
+
+    </div>
+    <br><br><br><br><br>
+    <div class="row">
+        <div class="col-sm-3 btn-success"  style="box-shadow: 8px 8px 5px black">
+            <h2 align="center" id="1" style="font-family: Serif">Test</h2>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4 btn-success "  style="box-shadow: 8px 8px 5px black">
+            <h2  align="center" id="2" style="font-family: Serif">One Day Internationals</h2>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3  btn-success " style="box-shadow: 8px 8px 5px black">
+            <h2 align="center" id="3"  style="font-family: Serif">T20 Internationals</h2>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="row">
+
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10" id="div">
+
+            <table class="table table-bordered table-hover" style="background-color:cornsilk" id="t1" ></table>
+            <table class="table table-bordered table-hover" style="background-color:cornsilk" id="t2" ></table>
+            <table class="table table-bordered table-hover" style="background-color:cornsilk" id="t3" ></table>
+            <table class="table table-bordered table-hover" style="background-color:cornsilk" id="t4" ></table>
+            <table class="table table-bordered table-hover" style="background-color:cornsilk" id="t5" ></table>
+
+        </div>
+        <div class="col-sm-1"></div>
+
+    </div>
+
+
+</div>
+
+<br><br><br>
+
+<script>
+    var cnt=1;
+    var ans=true;
+    var f1=false,f2=false,f3=false;
+    function change_data(data,val,cb) {
+
+        $("#t"+val).html(data).css("font-family","Arial");
+        var el = $("#t"+val+" a");
+        var i;
+        for(i=0;i<el.length;i++)
+        {
+            if(el.eq(i).attr("href")[0]!='h')
+                el.eq(i).attr("href","https://cricket.yahoo.com"+el.eq(i).attr("href"));
+            el.eq(i).attr("target","_blank");
+            el.eq(i).css("font-family","fantasy").css("font-style","italic");
+        }
+        cnt++;
+        remove_junk(val,function()
+        {
+            cb();
+        });
+    }
+    $("#1").click(function () {
+
+
+        initialise(function () {
+            f1=true;
+            f2=false;
+            f3=false;
+            $.get('/test',{id:1},function (data,status) {
+                change_data(data,1,function () {});
+            });
+        });
+    });
+    $("#2").click(function () {
+
+        initialise(function () {
+            f2=true;
+            f1=false;
+            f3=false;
+            $.get('/odi',{id:1},function (data,status) {
+                change_data(data,1,function () {});
+            });
+        });
+    });
+
+    $("#3").click(function () {
+
+        initialise(function () {
+            f2=false;
+            f1=false;
+            f3=true;
+            $.get('/t20',{id:1},function (data,status) {
+                change_data(data,1,function () {});
+            });
+        });
+    });
+
+    function initialise(cb)
+    {
+        cnt=1;
+        $("#t1").html('<h1 align="center" style="font-size: 50px">Loading...</h1>');
+        $("#t2").html("");
+        $("#t3").html("");
+        $("#t4").html("");
+        $("#t5").html("");
+        cb();
+    }
+    function remove_junk(val,callback) {
+        $("#t"+val+" #ycric-series-schedule-upcoming-navigation ").css("display","none");
+        $("#t"+val+" .ycric-pagination-numbers").css("display","none");
+        $("#t"+val+" .links").css("display","none");
+        $("#t"+val+" .ycric-pagination-total").css("display","none");
+        callback();
+    }
+    $(window).on( "scroll" , function() {
+        var $document =$(document) ;
+        var $window = $(this);
+        if( $document.scrollTop() >= $document.height() - $window.height() -50 ) {
+            if(ans && f1 && cnt<=4)
+            {
+                ans=false;
+                $("#t"+cnt).html('<h1 align="center" style="font-size: 50px">Loading...</h1>');
+                console.log(cnt);
+                $.get('/test',{id:cnt},function (data,status) {
+                    change_data(data,cnt,function () {
+                        ans=true;
+                    });
+                });
+            }
+            else if(ans && f2 && cnt<=5)
+            {
+                ans=false;
+                $("#t"+cnt).html('<h1 align="center" style="font-size: 50px">Loading...</h1>');
+                console.log(cnt);
+                $.get('/odi',{id:cnt},function (data,status) {
+                    change_data(data,cnt,function () {
+                        ans=true;
+                    });
+                });
+            }
+            else if(ans && f3 && cnt<=3)
+            {
+                ans=false;
+                $("#t"+cnt).html('<h1 align="center" style="font-size: 50px">Loading...</h1>');
+                console.log(cnt);
+                $.get('/t20',{id:cnt},function (data,status) {
+                    change_data(data,cnt,function () {
+                        ans=true;
+                    });
+                });
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

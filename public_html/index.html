@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <! This will help in zooming in mobile>
+    <title>CricFrenzy</title>
+</head>
+<script src="jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+
+<style>
+    .navbar-default
+    {
+        background-color: purple;
+        border-color: rebeccapurple;
+    }
+    .navbar-default .navbar-brand {
+        color: #ecf0f1;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        font-size: 1.3em;
+        color: #ffbbbc;
+    }
+    .navbar-default .navbar-text {
+        color: #ecf0f1;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #ecf0f1;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #ffbbbc;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #ffbbbc;
+        font-size: 1.3em;
+        background-color: #c02b94;
+    }
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #ffbbbc;
+        font-size: 1.3em;
+        background-color: #c02b94;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #c02b94;
+    }
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #c02b94;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ecf0f1;
+    }
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: #ecf0f1;
+    }
+    .navbar-default .navbar-link {
+        font-size: 1.3em;
+        color: #ecf0f1;
+    }
+    .navbar-default .navbar-link:hover {
+        color: #ffbbbc;
+        font-size: 1.3em;
+    }
+    @media (max-width: 767px) {
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+            color: #ecf0f1;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #ffbbbc;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+            color: #ffbbbc;
+            background-color: #c02b94;
+        }
+    }
+    #heading
+    {
+        font-size: 4em;
+    }
+    /*Media queries regrading photos and size*/
+    @media screen and (max-width: 992px)
+    {
+        #row1-div1
+        {
+            display: none;
+        }
+        #row1-div3
+        {
+            display: none;
+        }
+
+    }
+
+    @media screen and (max-width: 1020px) {
+
+        #heading
+        {
+            font-size: 3.2em;
+        }
+
+    }
+
+    body
+    {
+        background-color: lightyellow;
+    }
+
+</style>
+
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Cricket</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li>
+                    <a href="aboutUs.html">About Us </a>
+                </li>
+                <li><a href="project.html">Project</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="new_user.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+
+    <div class="row"   id="row1" style="margin-top: 10px; margin-bottom: 10px;">
+        <div class="col-sm-3" id="row1-div1">
+        </div>
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-4" id="row1-div2">
+            <div id="heading" style="font-weight: bold ;  font-family: Serif ; color: red; text-align: center"  > CRICFRENZY  </div>        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3" id="row1-div3">
+        </div>
+
+
+    </div>
+    <div class="row" id="row2" style="margin-top: 10px; background-color: pink; padding: 2px">
+
+        <div class="col-sm-12" id="row2-div1">
+            <p id="caption2" style="text-align: center; font-size: 1.4em; color: darkblue; margin-top: 3px; margin-bottom: 3px"> <mark>All cricket news, updates and stats at your click.</mark> </p>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <br>
+
+        <div class="col-sm-1">
+
+
+
+        </div>
+
+        <div class="col-sm-10" style="background-color: Menu; box-shadow: 10px 10px 5px lightgrey; box-sizing: border-box">
+
+            <br>
+
+            <a href="stats.html"> <button class="btn btn-block bg-primary" style="background-color:  purple;color: whitesmoke; font-size: 2em; font-weight: 500">
+
+            Records
+
+            </button></a>
+            <br>
+
+            <!--<a href="women-stats.html"> <button class="btn btn-block bg-primary" style="background-color:  purple;color: whitesmoke; font-size: 2em; font-weight: 500">!-->
+
+            <a href="woman.html"> <button class="btn btn-block bg-primary" style="background-color:  purple;color: whitesmoke; font-size: 2em; font-weight: 500">
+
+                Women Cricket
+
+            </button></a>
+            <br>
+
+            <a href="live.html"> <button class="btn btn-block bg-primary" style="background-color: purple; color: whitesmoke; font-size: 2em; font-weight: 500">
+
+                Live Matches
+
+
+            </button></a>
+
+            <br>
+
+            <a href="upcoming-matches.html"> <button class="btn btn-block bg-primary" style="background-color:  purple;color: whitesmoke; font-size: 2em; font-weight: 500">
+
+                Upcoming Matches
+
+            </button></a>
+
+            <br>
+
+            <a href="concluded-matches.html"> <button class="btn btn-block bg-primary" style="background-color:  purple;color: whitesmoke; font-size: 2em; font-weight: 500">
+
+                Results
+
+            </button></a>
+
+            <br>
+        </div>
+
+
+        <div class="col-sm-1">
+
+
+
+        </div>
+
+        <br>
+
+    </div>
+
+
+</div>
+<div id="content"></div>
+<script>
+
+    $(function () {
+
+        if(localStorage.getItem('username'))
+        {
+            //alert("You are Logged out!!");
+        }
+        localStorage.clear();
+
+    });
+
+</script>
+</body>
+</html>
+
+

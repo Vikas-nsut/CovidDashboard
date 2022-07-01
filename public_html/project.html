@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <! This will help in zooming in mobile>
+    <title>Project</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script src="jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<style>
+
+    .navbar-default
+    {
+        background-color: purple;
+        border-color: rebeccapurple;
+    }
+    .navbar-default .navbar-brand {
+        color: #ecf0f1;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        font-size: 1.3em;
+        color: #ffbbbc;
+    }
+    .navbar-default .navbar-text {
+        color: #ecf0f1;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #ecf0f1;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #ffbbbc;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #ffbbbc;
+        font-size: 1.3em;
+        background-color: #c02b94;
+    }
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #ffbbbc;
+        font-size: 1.3em;
+        background-color: #c02b94;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #c02b94;
+    }
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #c02b94;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ecf0f1;
+    }
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: #ecf0f1;
+    }
+    .navbar-default .navbar-link {
+        font-size: 1.3em;
+        color: #ecf0f1;
+    }
+    .navbar-default .navbar-link:hover {
+        color: #ffbbbc;
+        font-size: 1.3em;
+    }
+    @media (max-width: 767px) {
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+            color: #ecf0f1;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #ffbbbc;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+            color: #ffbbbc;
+            background-color: #c02b94;
+        }
+    }
+
+
+    mark
+    {
+        font-size: 1.4em;
+        color: red;
+    }
+
+    a
+    {
+        font-size: 2em;
+        color: darkgreen;
+    }
+
+</style>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Cricket</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="aboutUs.html">About Us </a>
+                </li>
+                <li class="active"><a href="project.html">Project</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="new_user.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<br><br><br>
+
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-sm-1">
+
+
+
+        </div>
+
+        <div class="col-sm-3" style="text-align: center ;background-color: white; box-shadow: 8px 8px 4px black; font-family: Serif; font-weight: 900; border: 3px solid black; ">
+
+            <h1 style="color: purple; font-size: 4em; ">Attempt</h1>
+            <div style="background-color: purple; color: white; font-size: 1.5em; box-shadow: 8px 8px 4px darkgrey; text-align: justify; padding: 10px">
+
+                A website that can display latest records, stats and live scores built using Node.js ,MongoDB and Bootstap.
+
+            </div>
+
+            <br><br>
+
+        </div>
+
+        <div class="col-sm-1">
+
+
+
+        </div>
+
+
+        <div class="col-sm-6" style="text-align: center ;background-color: white; box-shadow: 8px 8px 4px black; font-family: Serif; font-weight: 900; border: 3px solid black; ">
+
+            <h1 style="color: purple; font-size: 4em; ">Features</h1>
+            <div style="background-color: purple; color: white; font-size: 1.5em; box-shadow: 8px 8px 4px darkgrey; text-align: justify; padding: 10px">
+
+                This website can show details about live, upcoming and recently concluded matches. A separate section for women's cricket has also been provided. User can also create an account, build a small profile and search for cricket records. Searched records can be found in favourites. Latest news and plethora of statistics can be found on the website. The website is mobile-responsive as well.
+            </div>
+
+            <br><br>
+
+        </div>
+
+        <div class="col-sm-1">
+
+
+        </div>
+
+
+    </div>
+    <br><br><br>
+    <div class="row">
+
+        <div class="col-sm-2">
+
+
+
+        </div>
+
+        <div class="col-sm-8" style="text-align: center ;background-color: white; box-shadow: 8px 8px 4px black; font-family: Serif; font-weight: 900; border: 3px solid black; ">
+
+            <h1 style="color: green; font-size: 4em; ">Review</h1>
+            <div style="background-color: green; color: white; font-size: 1.5em; box-shadow: 8px 8px 4px darkgrey; text-align: center; padding: 10px">
+
+                We we will like you to leave a feedback on how was your experience visiting the website.
+
+            </div>
+
+            <br><br>
+
+        </div>
+
+        <div class="col-sm-2">
+
+
+        </div>
+
+
+    </div>
+    <br><br>
+
+    <div class="row" style="text-align: center">
+
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-6">      <a href="review.html">  <button class="btn btn-info" style="font-size: 1em">Write Feedback</button>
+        </a></div>
+
+        <div class="col-sm-3">
+
+        </div>
+
+    </div>
+    <br><br>
+
+
+
+</div>
+<script>
+
+    $(function () {
+
+        if(localStorage.getItem('username')!=null) {
+            var string = '<div class="container-fluid">  <div class="navbar-header">' +
+                    '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> ' +
+                    '<span class="icon-bar"></span> '
+                    + '<span class="icon-bar"></span>  ' +
+                    '<span class="icon-bar"></span>' +
+                    '</button>' +
+                    '<a class="navbar-brand" href="index.html">Cricket</a>  </div>  ' +
+                    '<div class="collapse navbar-collapse" id="myNavbar"> <ul class="nav navbar-nav"> ' +
+                    '<li><a href="index.html" id="home-button">Home</a></li>  <li>  <a href="aboutUs.html">About Us </a> </li>' +
+                    '<li><a href="project.html">Project</a></li> ' +
+                    '</ul>  <ul class="nav navbar-nav navbar-right">     ' +
+                    '<li><a href="logged.html"><span class="glyphicon glyphicon-user"></span>Account</a></li>  ' +
+                    '<li><a id="log-out" href="index.html"><span class="glyphicon glyphicon-off"></span>Log Out</a></li>' +
+                    '</ul>  ' + ' </div>'
+                    + '</div> ';
+
+            $('.navbar').html(string);
+        }
+
+
+    });
+
+
+
+</script>
+
+</body>
+</html>

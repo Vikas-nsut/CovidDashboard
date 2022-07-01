@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Review</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<style>
+
+    .navbar-default
+    {
+        background-color: purple;
+        border-color: rebeccapurple;
+    }
+    .navbar-default .navbar-brand {
+        color: #ecf0f1;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        font-size: 1.3em;
+        color: #ffbbbc;
+    }
+    .navbar-default .navbar-text {
+        color: #ecf0f1;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #ecf0f1;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #ffbbbc;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #ffbbbc;
+        font-size: 1.3em;
+        background-color: #c02b94;
+    }
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #ffbbbc;
+        font-size: 1.3em;
+        background-color: #c02b94;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #c02b94;
+    }
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #c02b94;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ecf0f1;
+    }
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: #ecf0f1;
+    }
+    .navbar-default .navbar-link {
+        font-size: 1.3em;
+        color: #ecf0f1;
+    }
+    .navbar-default .navbar-link:hover {
+        color: #ffbbbc;
+        font-size: 1.3em;
+    }
+
+
+    @media (max-width: 767px) {
+
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+            color: #ecf0f1;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #ffbbbc;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+            color: #ffbbbc;
+            background-color: #c02b94;
+        }
+    }
+
+    textarea
+    {
+        font-size: 1.2em;
+        color: lightgreen;
+        font-family: "Comic Sans MS";
+    }
+
+
+
+
+</style>
+
+
+<body>
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Cricket</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="aboutUs.html">About Us </a>
+                </li>
+                <li><a href="project.html">Project</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="new_user.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-sm-2">
+
+
+
+        </div>
+
+        <div class="col-sm-8" style="text-align: center">
+
+            <h1 style="font-size: 5em; color: darkgreen; font-weight: 900; font-style: italic">Review</h1>
+
+        </div>
+
+        <div class="col-sm-2">
+
+
+
+        </div>
+
+
+    </div>
+    <br>
+    <div class="row">
+
+        <div class="col-sm-3">
+
+
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" name="name" id="name" class="form-control input-lg" placeholder="Your good name" tabindex="3" required>
+                <br>What you liked about the website.<br>
+                <textarea class="form-control"  id="1" style="height: 100px" title="review" >
+
+                </textarea>
+
+                <br>Anything you found that needs to be improved or worked upon.<br>
+                <textarea class="form-control"  id="2" style="height: 100px" title="review">
+
+                </textarea>
+
+                <br>Any new feature that you want to advice.<br>
+                <textarea class="form-control" id="3"  style="height: 100px" title="review" >
+
+                </textarea>
+
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+
+
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+
+
+
+        </div>
+
+        <div class="col-sm-6">
+
+            <button class="btn btn-success" style="font-size: 2em;" id="submit">Submit</button>
+
+
+        </div>
+
+        <div class="col-sm-3">
+
+            <p style="color: green">Please dont give an empty or senseless review</p>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<script>
+
+
+    $(function () {
+
+
+        $('#submit').click(function () {
+
+            var str1 = $('#name').val();
+            var str2 = $('#1').val();
+            var str3 = $('#2').val();
+            var str4 = $('#3').val();
+            console.log(str2);
+
+            console.log(str3);
+
+            console.log(str4);
+
+
+
+            if(str1 == "")
+            {
+                alert("Please enter your name");
+            }
+            else if(str2 == "" && str3 == "" && str4 == "")
+            {
+                alert("Please at least write anything in any one review field ");
+            }
+
+            else
+            {
+                $.post('/review', {name : str1 ,
+                    str2 : str2,
+                    str3 : str3,
+                    str4 : str4
+
+                }, function (data , status) {
+
+
+                    alert("Thanks for your review");
+                    window.location.href = "index.html";
+
+
+                });
+            }
+
+
+        });
+
+
+    });
+
+
+
+</script>
+
+</body>
+</html>

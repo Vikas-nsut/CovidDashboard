@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <! This will help in zooming in mobile>
+    <title>Cricket Stats</title>
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <script src="jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+
+</head>
+<style>
+
+    .navbar-default
+    {
+        background-color: purple;
+        border-color: rebeccapurple;
+    }
+    .navbar-default .navbar-brand {
+        color: #ecf0f1;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        font-size: 1.3em;
+        color: #ffbbbc;
+    }
+    .navbar-default .navbar-text {
+        color: #ecf0f1;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #ecf0f1;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #ffbbbc;
+        font-size: 1.3em;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #ffbbbc;
+        font-size: 1.3em;
+        background-color: #c02b94;
+    }
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #ffbbbc;
+        font-size: 1.3em;
+        background-color: #c02b94;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #c02b94;
+    }
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #c02b94;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ecf0f1;
+    }
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: #ecf0f1;
+    }
+    .navbar-default .navbar-link {
+        font-size: 1.3em;
+        color: #ecf0f1;
+    }
+    .navbar-default .navbar-link:hover {
+        color: #ffbbbc;
+        font-size: 1.3em;
+    }
+
+
+    @media (max-width: 767px) {
+
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+            color: #ecf0f1;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #ffbbbc;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+            color: #ffbbbc;
+            background-color: #c02b94;
+        }
+    }
+
+    body
+    {
+        background: url("assets/img/backgrounds/bg7.jpg");
+        background-size: 100%;
+    }
+
+
+
+
+
+
+
+</style>
+<body>
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Cricket</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="aboutUs.html">About Us </a>
+                </li>
+                <li><a href="project.html">Project</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="new_user.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <br><br>
+    <div class="row">
+
+        <div class="col-sm-12">
+            <h1 align="center" id="heading" style="font-family: Serif ; font-size: 80px;color: blueviolet" >CRICKET STATS</h1>
+        </div>
+
+    </div>
+    <br><br>
+    <div class="row">
+
+        <div class="col-sm-5" style="background-color: white;box-shadow: 8px 8px 16px black; color: purple">
+            <h2 align="center">TEST MATCHES</h2>
+            <table class="table table-responsive table-bordered table-hover" id="t1">
+
+                <tbody >
+
+                <tr>
+                    <td><a style="text-decoration: none" href="w-test/batting.html">Batting records</a></td>
+                </tr>
+                <tr>
+                    <td><a style="text-decoration: none" href="w-test/bowling.html">Bowling records</a></td>
+                </tr>
+
+                <tr>
+                    <td> <a style="text-decoration: none" href="w-test/wicket-keeping.html">Wicketkeeping records</a></td>
+                </tr>
+                <tr>
+                    <td><a style="text-decoration: none" href="w-test/fielding.html">Fielding records</a></td>
+                </tr>
+
+                <tr>
+                    <td><a style="text-decoration: none" href="w-test/all-round.html">All-round records</a></td>
+                </tr>
+
+                <tr>
+                    <td><a style="text-decoration: none" href="w-test/partnership.html">Partnership records</a></td>
+                </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-5" style="background-color: white;box-shadow: 8px 8px 16px black; color: purple;">
+            <h2 align="center">ODI</h2>
+            <table class="table table-responsive table-bordered table-hover">
+
+                <tbody >
+
+                <tr>
+                    <td><a style="text-decoration: none" href="w-odi/batting.html">Batting records</a></td>
+                </tr>
+                <tr>
+                    <td><a style="text-decoration: none" href="w-odi/bowling.html">Bowling records</a></td>
+                </tr>
+
+                <tr>
+                    <td> <a style="text-decoration: none" href="w-odi/wicket-keeping.html">Wicketkeeping records</a></td>
+                </tr>
+                <tr>
+                    <td><a style="text-decoration: none" href="w-odi/fielding.html">Fielding records</a></td>
+                </tr>
+
+                <tr>
+                    <td><a style="text-decoration: none" href="w-odi/all-round.html">All-round records</a></td>
+                </tr>
+
+                <tr>
+                    <td><a style="text-decoration: none" href="w-odi/partnership.html">Partnership records</a></td>
+                </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+</div>
+
+<script>
+
+    $('td').css({'background-color' : 'purple', 'color' : 'white', 'text-align' : 'center', 'font-size' : '1.3em'});
+    $('a').css({'color' : 'white'});
+
+    function manage() {
+
+        if(window.innerWidth < 1000)
+        {
+            $('body').css({'background' : 'none'});
+            $('#heading').css({'font-size' : '65px'});
+        }
+        else {
+            $('body').css({'background' : 'url("assets/img/backgrounds/bg7.jpg")', 'background-size' : '120%'});
+            $('#heading').css({'font-size' : '80px'});
+        }
+
+
+
+
+    }
+
+    var man = setInterval(manage, 500)
+
+
+</script>
+</body>
+</html>

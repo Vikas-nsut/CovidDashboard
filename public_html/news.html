@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <! This will help in zooming in mobile>
+    <title>Cricket News</title>
+
+    <script src="jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+
+    <style>
+
+        .navbar-default
+        {
+            background-color: purple;
+            border-color: rebeccapurple;
+        }
+        .navbar-default .navbar-brand {
+            color: #ecf0f1;
+            font-size: 1.3em;
+        }
+        .navbar-default .navbar-brand:hover,
+        .navbar-default .navbar-brand:focus {
+            font-size: 1.3em;
+            color: #ffbbbc;
+        }
+        .navbar-default .navbar-text {
+            color: #ecf0f1;
+            font-size: 1.3em;
+        }
+        .navbar-default .navbar-nav > li > a {
+            color: #ecf0f1;
+            font-size: 1.3em;
+        }
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > li > a:focus {
+            color: #ffbbbc;
+            font-size: 1.3em;
+        }
+        .navbar-default .navbar-nav > .active > a,
+        .navbar-default .navbar-nav > .active > a:hover,
+        .navbar-default .navbar-nav > .active > a:focus {
+            color: #ffbbbc;
+            font-size: 1.3em;
+            background-color: #c02b94;
+        }
+        .navbar-default .navbar-nav > .open > a,
+        .navbar-default .navbar-nav > .open > a:hover,
+        .navbar-default .navbar-nav > .open > a:focus {
+            color: #ffbbbc;
+            font-size: 1.3em;
+            background-color: #c02b94;
+        }
+        .navbar-default .navbar-toggle {
+            border-color: #c02b94;
+        }
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus {
+            background-color: #c02b94;
+        }
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #ecf0f1;
+        }
+        .navbar-default .navbar-collapse,
+        .navbar-default .navbar-form {
+            border-color: #ecf0f1;
+        }
+        .navbar-default .navbar-link {
+            font-size: 1.3em;
+            color: #ecf0f1;
+        }
+        .navbar-default .navbar-link:hover {
+            color: #ffbbbc;
+            font-size: 1.3em;
+        }
+
+
+        @media (max-width: 767px) {
+
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+                color: #ecf0f1;
+            }
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+                color: #ffbbbc;
+            }
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+                color: #ffbbbc;
+                background-color: #c02b94;
+            }
+        }
+
+        #heading
+        {
+            font-size: 90px;
+            font-family: "Abyssinica SIL";
+            font-style: italic;
+            color:red;
+        }
+        @media screen and (max-width: 900px) {
+
+            #heading
+            {
+                font-size:60px;
+                font-family: "Abyssinica SIL";
+                color:red;
+            }
+        }
+
+
+    </style>
+
+
+
+</head>
+<body style="background-color:bisque">
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Cricket</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">About Us </a>
+                </li>
+                <li><a href="project.html">Project</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="new_user.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <br><br>
+    <div class="row">
+
+        <div class="col-sm-12">
+
+            <h1 align="center" id="heading">Cricket News</h1>
+
+        </div>
+    </div>
+    <br><br><br><br>
+
+
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4 btn-success" id="1" style="box-shadow: 8px 8px 5px black">
+        <h2 align="center" style="font-family:Georgia" >INTERVIEWS</h2>
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4 btn-success" id="2" style="box-shadow: 8px 8px 5px black">
+        <h2 align="center" style="font-family:Georgia">HEADLINES</h2>
+    </div>
+    <div class="col-sm-1"></div>
+
+</div>
+    </div>
+
+<br><br><br><br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-10" id="div2" style="background-color: snow"></div>
+        <div class="col-sm-1"></div>
+    </div>
+
+</div>
+    <div id="loading" style="display: none">
+        <h1 align="center" style="font-size: 50px;font-family:'Tibetan Machine Uni'">Loading...</h1>
+    </div>
+
+    <br><br><br><br><br>
+<script>
+
+    var cnt=1;
+    var f1=false,f2=false,f3=false;
+    $("#2").click(function () {
+
+        $("#loading").css("display","block");
+            $.get('/hl',{id:1},function (data,status) {
+                f2=true;
+                f1=false;
+                f1=false;
+                $("#heading").text("Headlines");
+                $("#div2").html(data);
+
+                append_data(function(){});
+        });
+    });
+
+
+    $("#1").click(function () {
+
+        $("#loading").css("display","block");
+            $.get('/interview',{id:1},function (data,status) {
+                f1=true;
+                f2=false;
+                f3=false;
+                $("#heading").text("Interviews");
+                $("#div2").html(data);
+                append_data(function(){});
+            });
+    });
+
+
+    function append_data(callback)
+    {
+        $("#div2 img").attr("class","img-responsive");
+        $("#div2 .pagination").css("display","none");
+
+        var i;
+        var el1= $("#div2 a");
+        el1.css("font-family","Arial");
+        var hl_el = $("#heading");
+        for(i=0;i<el1.length;i++)
+        {
+            if(el1.eq(i).attr("href")[0]!='h')
+            el1.eq(i).attr("href","https://cricket.yahoo.com"+el1.eq(i).attr("href"));
+            el1.eq(i).attr("target","_blank").css("font-family","fantasy").css("font-style","italic");
+
+            if(hl_el.text()=="Headlines")
+                el1.eq(i).css("font-size",30);
+        }
+
+
+
+        el2=$("#div2 h2").filter(".subheadline");
+        for(i=0;i<el2.length;i++)
+        {
+            el2.eq(i).css("background-color","purple").css("color","white").css("font-family","Serif");
+        }
+
+        $("#loading").css("display","none");
+        cnt++;
+        callback();
+    }
+
+
+var ans=true;
+    $(window).on( "scroll" , function() {
+
+        var $document =$(document) ;
+        var $window = $(this);
+
+        if( $document.scrollTop() >= $document.height() - $window.height() -50 ) {
+
+            if(ans && f1 && cnt<=10)
+            {
+                ans=false;
+                $("#loading").css("display","block");
+                console.log(cnt);
+                $.get('/interview',{id:cnt},function (data,status) {
+
+                    $("#div2").append(data);
+                    append_data(function () {
+                        ans=true;
+                    });
+
+                });
+            }
+
+
+           else if(ans && f2 && cnt<=10)
+            {
+                ans=false;
+                $("#loading").css("display","block");
+                console.log(cnt);
+                $.get('/hl',{id:cnt},function (data,status) {
+
+                    $("#div2").append(data);
+                    append_data(function () {
+                        ans=true;
+                    });
+                });
+            }
+        }
+
+    });
+
+</script>
+</body>
+</html>
